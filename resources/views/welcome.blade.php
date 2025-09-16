@@ -29,7 +29,7 @@
     </header>
 
    
-    <main class="w-full lg:max-w-6xl  mx-auto mt-16 px-6 text-center">
+    <main class="w-full lg:max-w-6xl mx-auto mt-16 px-6 text-center">
 
     <!-- Hero Section -->
     <div class="shadow-xl rounded-xl p-10">

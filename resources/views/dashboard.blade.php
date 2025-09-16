@@ -16,7 +16,7 @@
         </div>
 
         <!-- Stats Section -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl p-6 shadow-lg">
                 <h2 class="text-xl font-semibold">Students</h2>
                 <p class="text-3xl font-bold mt-2">120</p>
@@ -32,6 +32,12 @@
             <div class="bg-gradient-to-r from-pink-500 to-rose-600 text-white rounded-xl p-6 shadow-lg">
                 <h2 class="text-xl font-semibold">Courses</h2>
                 <p class="text-3xl font-bold mt-2">8</p>
+                <a href="#" class="text-sm underline mt-2 block">View all</a>
+            </div>
+
+            <div class="bg-gradient-to-r from-gray-500 to-gray-600 text-white rounded-xl p-6 shadow-lg">
+                <h2 class="text-xl font-semibold">Deleted</h2>
+                <p class="text-3xl font-bold mt-2">10</p>
                 <a href="#" class="text-sm underline mt-2 block">View all</a>
             </div>
         </div>
