@@ -56,18 +56,35 @@ class StudentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Student $student)
+    public function edit($id)
     {
-        //
+        // Find the student by ID
+        $student = \App\Models\Student::findOrFail($id);
+
+        // Return the edit view with student data
+        return view('students.edit', compact('student'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Student $student)
+    public function update(Request $request, $id)
     {
-        //
+        $student = \App\Models\Student::findOrFail($id);
+
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:students,email,'.$student->id,
+            'birthday' => 'nullable|date',
+            'address' => 'nullable|string|max:255',
+            'age' => 'nullable|integer|min:0',
+        ]);
+
+        $student->update($request->all());
+
+        return redirect()->route('students.index')->with('success', 'Student updated successfully.');
     }
+
 
     /**
      * Remove the specified resource from storage.

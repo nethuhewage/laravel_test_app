@@ -28,16 +28,17 @@
        
     </header>
 
+   
+    <main class="w-full lg:max-w-6xl  mx-auto mt-16 px-6 text-center">
+
     <!-- Hero Section -->
-    <main class="w-full lg:max-w-5xl max-w-[335px] text-center mt-32">
+    <div class="shadow-xl rounded-xl p-10">
         <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             🎓 Welcome to <span class="text-blue-600">My Laravel App</span>
         </h1>
-        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore tempor incididunt ut labore
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore tempor incididunt ut labore.
         </p>
-
-        
         <div class="mt-6 flex flex-wrap justify-center gap-4">
             @auth
                 <a href="{{ url('/dashboard') }}"
@@ -55,168 +56,125 @@
                 </a>
             @endauth
         </div>
-    </main>
+    </div>
 
     <!-- Features Section -->
-    <section class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 w-full lg:max-w-5xl text-center mb-20">
+    <section class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">👨‍🎓 Student Management</h3>
             <p class="text-gray-600 dark:text-gray-400 mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Add, edit, and manage student records effortlessly.
             </p>
         </div>
         <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">👩‍🏫 Teacher Dashboard</h3>
             <p class="text-gray-600 dark:text-gray-400 mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Track teacher details and their assigned courses.
             </p>
         </div>
         <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">📚 Courses</h3>
             <p class="text-gray-600 dark:text-gray-400 mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Organize and monitor available courses with statistics.
             </p>
         </div>
     </section>
 
     <!-- About Section -->
-<section class="mt-20 w-full lg:max-w-5xl px-6">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
-        About This Project
-    </h2>
-
-    <!-- About with Image -->
-    <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
-        <div class="flex justify-center">
-            <img src="https://laravel.com/img/logomark.min.svg" 
-                 alt="Laravel Logo" 
-                 class="w-64 h-64 object-contain drop-shadow-lg animate-pulse-slow">
-        </div>
-
-        
-        <div class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            <p class="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing <strong>Lorem ipsum</strong> and 
-                <strong>consectetur</strong>. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <p>
-                Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </div>
-
-    <!-- Mission / What We Do -->
-    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">🎯 Our Mission</h3>
-            <p class="text-gray-600 dark:text-gray-400">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-            </p>
-        </div>
-        <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">💻 What We Do</h3>
-            <p class="text-gray-600 dark:text-gray-400">
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Gallery Section -->
-<section class="mt-20 w-full lg:max-w-6xl px-6 mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
-        Our Gallery
-    </h2>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
-            <img src="https://picsum.photos/600/400?random=1" alt="Gallery Image" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Project One</h3>
-                <p class="text-gray-600 dark:text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <section class="mt-20 bg-white dark:bg-gray-900 shadow-lg rounded-xl p-8">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
+            About This Project
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div class="flex justify-center">
+                <img src="https://laravel.com/img/logomark.min.svg" 
+                     alt="Laravel Logo" 
+                     class="w-64 h-64 object-contain drop-shadow-lg animate-pulse-slow">
+            </div>
+            <div class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p class="mb-4">
+                    Lorem ipsum dolor sit amet iste natus error sit voluptatem <strong>Omnis</strong> laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
             </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
-            <img src="https://picsum.photos/600/400?random=2" alt="Gallery Image" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Project Two</h3>
-                <p class="text-gray-600 dark:text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div class="bg-gray-50 dark:bg-gray-800 shadow rounded-xl p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">🎯 Our Mission</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 shadow rounded-xl p-6">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">💻 What We Do</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </p>
             </div>
         </div>
+    </section>
 
-        <!-- Card 3 -->
-        <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
-            <img src="https://picsum.photos/600/400?random=3" alt="Gallery Image" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Project Three</h3>
-                <p class="text-gray-600 dark:text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- Gallery Section -->
+    <section class="mt-20">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
+            Our Gallery
+        </h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            @foreach(range(1,6) as $i)
+            <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://picsum.photos/600/400?random={{$i}}" alt="Gallery Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Project {{$i}}</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
             </div>
+            @endforeach
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section class="mt-20 w-full lg:max-w-5xl px-6 mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
-        Contact Us
-    </h2>
-
-    <div class="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-8">
+    <!-- Contact Section -->
+    <section class="mt-20 bg-white dark:bg-gray-900 shadow-lg rounded-xl p-8">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
+            Contact Us
+        </h2>
         <form class="grid grid-cols-1 gap-6">
-            <!-- Name -->
             <div>
-                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Your Name
-                </label>
-                <input type="text" id="name" name="name" 
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Your Name</label>
+                <input type="text" name="name" placeholder="Enter your name" 
                        class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-700 
-                              dark:bg-gray-800 dark:text-white shadow-sm focus:ring-red-500 focus:border-red-500 p-3" 
-                       placeholder="Enter your name">
+                              dark:bg-gray-800 dark:text-white shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3">
             </div>
-
-            <!-- Email -->
             <div>
-                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Your Email
-                </label>
-                <input type="email" id="email" name="email" 
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Your Email</label>
+                <input type="email" name="email" placeholder="Enter your email" 
                        class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-700 
-                              dark:bg-gray-800 dark:text-white shadow-sm focus:ring-red-500 focus:border-red-500 p-3" 
-                       placeholder="Enter your email">
+                              dark:bg-gray-800 dark:text-white shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3">
             </div>
-
-            <!-- Message -->
             <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Message
-                </label>
-                <textarea id="message" name="message" rows="4" 
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                <textarea name="message" rows="4" placeholder="Write your message" 
                           class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-700 
-                                 dark:bg-gray-800 dark:text-white shadow-sm focus:ring-red-500 focus:border-red-500 p-3" 
-                          placeholder="Write your message"></textarea>
+                                 dark:bg-gray-800 dark:text-white shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3"></textarea>
             </div>
-
-            <!-- Button -->
             <div class="flex justify-center">
                 <button type="submit" 
-                        class="px-6 py-3 bg-red-600 text-white font-medium rounded-lg shadow-md 
-                               hover:bg-red-700 transition">
+                        class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md">
                     Send Message
                 </button>
             </div>
         </form>
-    </div>
-</section>
+    </section>
+
+</main>
+
 
 <!-- Footer -->
-<footer class="mt-20 bg-gray-100 dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700 w-full">
+<!-- <footer class="mt-20 bg-gray-100 dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700 w-full">
     <div class="px-6 py-10 grid md:grid-cols-3 gap-8 text-center md:text-left">
-        <!-- Logo / About -->
+        
         <div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">My Laravel App</h3>
             <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
@@ -225,7 +183,7 @@
             </p>
         </div>
 
-        <!-- Quick Links -->
+        
         <div>
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Quick Links</h4>
             <ul class="space-y-2 text-sm">
@@ -236,7 +194,7 @@
             </ul>
         </div>
 
-        <!-- Contact Info -->
+        
         <div>
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">Contact Info</h4>
             <p class="text-gray-600 dark:text-gray-400 text-sm">📍 Galle, Sri Lanka</p>
@@ -245,11 +203,11 @@
         </div>
     </div>
 
-    <!-- Bottom -->
+    
     <div class="text-center border-t border-gray-300 dark:border-gray-700 py-4 text-sm text-gray-600 dark:text-gray-400">
         © 2025 My Laravel App. All rights reserved.
     </div>
-</footer>
+</footer> -->
 
 
 
